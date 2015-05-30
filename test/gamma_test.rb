@@ -20,4 +20,13 @@ class TestGamma < Test::Unit::TestCase
     assert_in_delta6  39916800, gamma(11 + 1)
     assert_in_delta6 479001600, gamma(12 + 1)
   end
+
+  def test_real_factorial
+    assert_in_delta6   1.1221576, gamma(0.84)
+    assert_in_delta6   0.8960042, gamma(1.31)
+    assert_in_delta6   1.3677936, gamma(2.54)
+    assert_in_delta6   2.0185809, gamma(3.01)
+    assert_in_delta6  32.5780961, gamma(5.2)
+    assert_in_delta6 142.4519441, gamma(6.1)
+  end
 end
