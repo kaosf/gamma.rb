@@ -1,5 +1,5 @@
 require "gamma/version"
 
-module Gamma
-  # Your code goes here...
+def gamma(z)
+  1
 end
