@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'gamma'
+puts gamma(ARGV[0].to_f)
